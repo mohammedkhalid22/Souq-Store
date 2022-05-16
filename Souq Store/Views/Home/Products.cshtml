@@ -1,0 +1,28 @@
+﻿@model List<Product>
+    <!-- ======= Services Section ======= -->
+<section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>المنتجات الخاصه بقسم ال</h2>
+            <p>.... هنا تعرض جميع المنتجات الخاصه بقسم ال المتاحه لدينا في هذا الموقع , نسعد لخدمتكم </p>
+        </div>
+        <div class="row gy-4">
+            @foreach (var item in Model)
+            {
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box iconbox-blue" style="width : 100% !important;">
+                    <img src ="/assets/img/Clothes Chld/@item.Photo" class="MyImg" style="width:200px"/>
+                        <h4><a>@item.Name</a></h4>
+                        <p>@item.Disciption</p>
+                    </div>
+                </div>
+
+
+
+            }
+        </div>
+
+    </div>
+</section><!-- End Services Section -->
